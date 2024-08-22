@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Selecciona el Tipo de Examen</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center">Selecciona el Tipo de Examen</h1>
+      <form method="POST" action="/select_exam" class="mt-4">
+        <div class="form-group">
+          <label for="exam_type">Tipo de Examen:</label>
+          <select id="exam_type" name="exam_type" class="form-control" required>
+            <option value="exani_ii">EXANI-II</option>
+            <option value="baccalaureat">Baccalauréat</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Siguiente</button>
+      </form>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
